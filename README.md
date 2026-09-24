@@ -24,21 +24,29 @@
 
 ---
 
-### 我的项目
+### 看板 Board
 
-| 项目 | 简介 | 规模 |
-|---|---|---|
-| [**article-image**](https://github.com/Lossalt/article-image) | 可搬迁图床：正文写名字，迁站只改 `base_url` | **6** commits · `+647` `−107` |
-| [**random-img**](https://github.com/Lossalt/random-img) | 随机壁纸接口：图池可拆，302 / 直出 / JSON | **5** commits · `+628` `−116` |
-| [**iptv-gen**](https://github.com/Lossalt/iptv-gen) | IPTV M3U 生成：采集、测活、排序、导出 | **1** commit · `+1426` `−0` |
-
-### 我参与的项目
-
-| 项目 | 我做了什么 | 量化 |
-|---|---|---|
-| [**Myriad**](https://github.com/Myriad-You/Myriad) | [PR #585](https://github.com/Myriad-You/Myriad/pull/585) 补全 `zh-TW` 机器人配对文案（已 merge） | **60** 条文案 · `+64` `−61` |
-| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) | 3 个 PR：本地曲库 / 说说时间轴 / 评论表单修复 | **3** PRs · `+1721` `−24` |
+[**建站与开源**](https://github.com/users/Lossalt/projects/1) — 任务与 PR 状态实时更新
 
 ---
 
-<p align="center"><sub>Lossalt · cjsy.cc</sub></p>
+### 我的项目
+
+<!-- stats:projects:start -->
+| 项目 | 简介 | 规模 |
+|---|---|---|
+| [**article-image**](https://github.com/Lossalt/article-image) | 可搬迁图床：正文写名字，迁站只改 `base_url` | **6** commits · `+685` `−145` |
+| [**random-img**](https://github.com/Lossalt/random-img) | 随机壁纸接口：图池可拆，302 / 直出 / JSON | **38** commits · `+643` `−131` |
+| [**iptv-gen**](https://github.com/Lossalt/iptv-gen) | IPTV M3U 生成：采集、测活、排序、导出 | **2** commits · `+1,816` `−9` |
+<!-- stats:projects:end -->
+
+### 我参与的项目
+
+<!-- stats:oss:start -->
+| 项目 | 我做了什么 | 量化 |
+|---|---|---|
+| [**Myriad**](https://github.com/Myriad-You/Myriad) | [PR #585](https://github.com/Myriad-You/Myriad/pull/585) 补全 `zh-TW` 机器人配对文案（已 merge） | **1** files · `+60` `−60` |
+| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) | 3 个 PR：本地曲库 / 说说时间轴 / 评论表单修复 | **3** PRs · `+1,721` `−24` |
+<!-- stats:oss:end -->
+
+<p align="center"><sub>Lossalt · cjsy.cc · stats auto-refreshed</sub></p>
