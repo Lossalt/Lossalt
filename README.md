@@ -10,7 +10,7 @@
   <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
 </p>
 
-个人站点 **[cjsy.cc](https://cjsy.cc/)** · 做一些能长期用的建站小工具
+个人站点 **[cjsy.cc](https://cjsy.cc/)** · 喜欢研究技术的普通人
 
 ---
 
