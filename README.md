@@ -10,42 +10,46 @@
   <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
 </p>
 
-I design small, durable web utilities around self-hosted publishing — mainly **WordPress resource portability**, image pipelines, and operational scripts.  
-围绕自建发布链路做可长期维护的小工具：WordPress 资源可搬迁、图床解耦、运维向脚本。
-
-**Focus** — decouple content references from physical storage, so migrations do not break posts.  
-**Stack** — PHP · WordPress · Python · Git
+个人站点 **[cjsy.cc](https://cjsy.cc/)** · 做一些能长期用的建站小工具
 
 ---
 
-### Selected work
+### 我的理念
 
-| Repository | Summary |
-|---|---|
-| [**article-image**](https://github.com/Lossalt/article-image) | **Movable image-bed entry for WordPress.** Posts call `article_image.php?res=cover-01` instead of embedding absolute file URLs. Physical storage is resolved from `base_url` (and optional `local_dir`), so host/domain migrations only change config — post HTML is left untouched. Whitelist key & extension validation; auto-detect among `webp/jpg/jpeg/png/gif/avif`; config file named `article_image.config.php` to avoid drop-in collisions. |
-| [**random-img**](https://github.com/Lossalt/random-img) | **Random wallpaper redirect service.** Separate `pc` / `mobile` pools with directory auto-scan (no hardcoded counts). Modes: `302` redirect, `?serve` byte streaming, `?json` metadata, plus `api.php` device index. Deploy full repo (local images) or PHP-only (fallback to GitHub raw). MIT-licensed PHP, Nginx sample included. |
-| [**iptv-gen**](https://github.com/Lossalt/iptv-gen) | **IPTV M3U pipeline.** Collects channels from multiple sources, probes liveness on the LAN, ranks by stream quality, and exports a clean playlist. Python CLI oriented to self-hosted media setups. |
-
-Design thread across the PHP tools: **keep content references stable, keep storage replaceable.**
+- **引用和存储解耦**：文章里写稳定的名字，图和文件可以搬走、换机器、换域名  
+- **小而专**：一个接口只解决一个问题，能被读懂、能被复用  
+- **走完整流程**：改动要能进主线——测试、审查、合并，而不是本地改完就算  
 
 ---
 
-### Open source
+### 我目前的学习方向
 
-| Project | Contribution |
-|---|---|
-| [**Myriad**](https://github.com/Myriad-You/Myriad) | [PR #585](https://github.com/Myriad-You/Myriad/pull/585) — **merged.** Completed `zh-TW` copy for bot pairing / unpairing UI in `frontend/src/i18n/zh-TW.json` (~60 keys: QQ, Telegram, Discord, Feishu). Product wording aligned with zh-CN source and locale conventions (`配對碼` / `機器人`; QQ・Telegram `私聊`, Discord `私訊`, Feishu `單聊`). Reviewed & approved by [mirai-mamori](https://github.com/mirai-mamori). |
-| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) | Maintained fork of the WordPress theme (AI-assisted reading, multi-locale). Local workspace prepared (`origin` + `upstream`); contributions in progress. |
-
----
-
-### Contact
-
-- Web: [cjsy.cc](https://cjsy.cc/)  
-- GitHub: [@Lossalt](https://github.com/Lossalt)
-
-Open to discussion on **WordPress hosting/resource layout, migration tooling, and lightweight PHP services**.
+- WordPress 主题与资源链路（媒体、迁移、多语言）  
+- PHP / Python 小服务的可维护写法  
+- 开源协作：分支、PR、Code Review、长期跟进上游  
 
 ---
 
-<p align="center"><sub>Lossalt · profile</sub></p>
+### 我的项目
+
+- **[article-image](https://github.com/Lossalt/article-image)** — 可搬迁图床命名入口。正文写 `?res=名字`，迁站只改 `base_url`  
+- **[random-img](https://github.com/Lossalt/random-img)** — 随机壁纸接口。桌面 / 手机图池，支持跳转、直出、JSON  
+- **[iptv-gen](https://github.com/Lossalt/iptv-gen)** — IPTV 播放列表生成：多源采集、测活、排序、导出  
+
+---
+
+### 我参与的项目
+
+- **[Myriad](https://github.com/Myriad-You/Myriad)** — 首个已合并 PR：[zh-TW 机器人配对文案](https://github.com/Myriad-You/Myriad/pull/585)（约 60 条，已 merge）  
+- **[Sakurairo](https://github.com/mirai-mamori/Sakurairo)** — WordPress 主题 fork，准备继续贡献  
+
+---
+
+### 联系
+
+- 网站：[cjsy.cc](https://cjsy.cc/)  
+- GitHub：[@Lossalt](https://github.com/Lossalt)
+
+---
+
+<p align="center"><sub>Lossalt</sub></p>
