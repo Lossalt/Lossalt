@@ -28,17 +28,6 @@ I design small, durable web utilities around self-hosted publishing — mainly *
 
 ---
 
-### Notes
-
-Longer write-ups on engineering trade-offs and migration practice are published at **[cjsy.cc](https://cjsy.cc/)**:
-
-- *人生第一次 PR：从 SSH 到主线合并* — first merged upstream contribution (Myriad)
-- *可搬迁的图床：让 WordPress 正文在迁移后仍不丢图* — design notes behind `article-image`
-
-*(Links can be pinned here once the posts go live.)*
-
----
-
 ### Open source
 
 | Project | Contribution |
