@@ -37,7 +37,7 @@
 | 项目 | 我做了什么 | 量化 |
 |---|---|---|
 | [**Myriad**](https://github.com/Myriad-You/Myriad) | [PR #585](https://github.com/Myriad-You/Myriad/pull/585) 补全 `zh-TW` 机器人配对文案（已 merge） | **60** 条文案 · `+64` `−61` |
-| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) | WordPress 主题 fork，准备往上游贡献 | 进行中 |
+| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) | 3 个 PR：本地曲库 / 说说时间轴 / 评论表单修复 | **3** PRs · `+1721` `−24` |
 
 ---
 
