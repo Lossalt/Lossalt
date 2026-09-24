@@ -19,7 +19,7 @@
 
 ### 正在学习
 
-- Go
+- Python / PHP
 - WordPress 主题与资源链路
 - 开源协作（PR / Review）
 
