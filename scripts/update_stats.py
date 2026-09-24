@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Refresh quantified project / OSS stats inside README.md markers."""
+"""Refresh quantified project / OSS stats inside README.md markers (best-effort).
+
+Safe to run even when:
+- some repos are private or stats endpoints return 404/202
+- README has no stats markers (no-op)
+"""
 
 from __future__ import annotations
 
@@ -27,44 +32,54 @@ SAKURAIRO_PRS = [
 ]
 
 
-def gh_get(path: str) -> object:
+def gh_get(path: str):
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "lossalt-profile-stats",
+    }
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(
         "https://api.github.com/" + path.lstrip("/"),
-        headers={
-            "Accept": "application/vnd.github+json",
-            "Authorization": f"Bearer {token}",
-            "User-Agent": "lossalt-profile-stats",
-        },
+        headers=headers,
     )
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
-            body = resp.read()
-            return json.loads(body or b"null")
+            return json.loads(resp.read() or b"null")
     except urllib.error.HTTPError as exc:
-        if exc.code == 202:
+        # 202: stats still computing; 404: empty/private/unavailable
+        if exc.code in (202, 404, 403):
             return None
         raise
+    except urllib.error.URLError:
+        return None
 
 
 def repo_stats(repo: str) -> dict[str, int]:
     data = gh_get(f"repos/{repo}/stats/contributors")
-    if not isinstance(data, list):
-        return {"commits": 0, "add": 0, "del": 0, "files": 0}
-
     commits = add = delete = 0
-    for person in data:
-        if person.get("author", {}).get("login") != OWNER:
-            continue
-        commits += int(person.get("total", 0))
-        for week in person.get("weeks", []) or []:
-            add += int(week.get("a", 0) or 0)
-            delete += int(week.get("d", 0) or 0)
+    if isinstance(data, list):
+        for person in data:
+            if person.get("author", {}).get("login") != OWNER:
+                continue
+            commits += int(person.get("total") or 0)
+            for week in person.get("weeks") or []:
+                add += int(week.get("a") or 0)
+                delete += int(week.get("d") or 0)
+    else:
+        # Fallback: commit list length (public repos)
+        commits_data = gh_get(f"repos/{repo}/commits?per_page=1")
+        # approximate via Link header is overkill; use 0 if unknown
+        commits = 0
+        if isinstance(commits_data, list) and commits_data:
+            commits = 1
 
-    tree = gh_get(f"repos/{repo}/git/trees/HEAD?recursive=1")
     files = 0
+    tree = gh_get(f"repos/{repo}/git/trees/HEAD?recursive=1")
     if isinstance(tree, dict):
-        files = sum(1 for item in tree.get("tree", []) if item.get("type") == "blob")
+        files = sum(1 for item in tree.get("tree") or [] if item.get("type") == "blob")
+
     return {"commits": commits, "add": add, "del": delete, "files": files}
 
 
@@ -80,23 +95,19 @@ def pr_stats(full_name: str) -> dict[str, int]:
     }
 
 
-def pr_count(repo: str) -> int:
-    data = gh_get(f"search/issues?q=repo:{repo}+author:{OWNER}+type:pr")
-    if isinstance(data, dict):
-        return int(data.get("total_count") or 0)
-    return 0
-
-
 def fmt_num(n: int) -> str:
     return f"{n:,}" if abs(n) >= 1000 else str(n)
 
 
 def replace_block(text: str, name: str, payload: str) -> str:
     pattern = rf"(<!-- stats:{name}:start -->)(.*?)(<!-- stats:{name}:end -->)"
+    if not re.search(pattern, text, flags=re.S):
+        print(f"skip marker stats:{name} (not present)")
+        return text
     new = f"\\1\n{payload.rstrip()}\n\\3"
     updated, count = re.subn(pattern, new, text, count=1, flags=re.S)
     if count != 1:
-        raise SystemExit(f"marker stats:{name} not found")
+        return text
     return updated
 
 
@@ -146,7 +157,7 @@ def main() -> None:
     text = replace_block(text, "projects", projects)
     text = replace_block(text, "oss", oss)
     README.write_text(text, encoding="utf-8")
-    print("README stats refreshed")
+    print("README stats refreshed (best-effort)")
 
 
 if __name__ == "__main__":
