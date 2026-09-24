@@ -26,7 +26,7 @@
 
 ### 我的项目
 
-| 项目 | 简介 | 实时状态（打开页面即更新） |
+| 项目 | 简介 | 实时状态 |
 |---|---|---|
 | [**article-image**](https://github.com/Lossalt/article-image) | 可搬迁图床：正文写名字，迁站只改 `base_url` | ![activity](https://img.shields.io/github/commit-activity/m/Lossalt/article-image?style=flat-square) ![last](https://img.shields.io/github/last-commit/Lossalt/article-image?style=flat-square) ![lang](https://img.shields.io/github/languages/top/Lossalt/article-image?style=flat-square) |
 | [**random-img**](https://github.com/Lossalt/random-img) | 随机壁纸接口：图池可拆，302 / 直出 / JSON | ![activity](https://img.shields.io/github/commit-activity/m/Lossalt/random-img?style=flat-square) ![last](https://img.shields.io/github/last-commit/Lossalt/random-img?style=flat-square) ![lang](https://img.shields.io/github/languages/top/Lossalt/random-img?style=flat-square) |
@@ -42,7 +42,5 @@
 | [**Sakurairo #1429**](https://github.com/mirai-mamori/Sakurairo/pull/1429) | 本地曲库 + APlayer 播放加固 | ![files](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1429&query=%24.changed_files&label=files&color=blue&style=flat-square) ![add](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1429&query=%24.additions&label=%2B&color=success&style=flat-square) ![del](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1429&query=%24.deletions&label=%E2%88%92&color=important&style=flat-square) |
 | [**Sakurairo #1430**](https://github.com/mirai-mamori/Sakurairo/pull/1430) | 说说时间轴、独立管理与归档缓存刷新 | ![files](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1430&query=%24.changed_files&label=files&color=blue&style=flat-square) ![add](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1430&query=%24.additions&label=%2B&color=success&style=flat-square) ![del](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1430&query=%24.deletions&label=%E2%88%92&color=important&style=flat-square) |
 | [**Sakurairo #1431**](https://github.com/mirai-mamori/Sakurairo/pull/1431) | 修复 comment_form sprintf 崩溃 | ![files](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1431&query=%24.changed_files&label=files&color=blue&style=flat-square) ![add](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1431&query=%24.additions&label=%2B&color=success&style=flat-square) ![del](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmirai-mamori%2FSakurairo%2Fpulls%2F1431&query=%24.deletions&label=%E2%88%92&color=important&style=flat-square) |
-
-看板（可选，任务视图）：[建站与开源](https://github.com/users/Lossalt/projects/1)
 
 <p align="center"><sub>Lossalt · cjsy.cc · badges refresh on every page view</sub></p>
