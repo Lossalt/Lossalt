@@ -22,9 +22,11 @@ I design small, durable web utilities around self-hosted publishing — mainly *
 
 | Repository | Summary |
 |---|---|
-| [**article-image**](https://github.com/Lossalt/article-image) | Named image-bed entry (`?res=`) for WordPress. Posts store stable keys; storage location is a single `base_url` change. Multi-format whitelist (`webp/jpg/png/gif/avif`). |
-| [**random-img**](https://github.com/Lossalt/random-img) | Random wallpaper redirect service (`pc` / `mobile` pools). 302, direct serve, and JSON modes; images optional on the host. |
-| [**iptv-gen**](https://github.com/Lossalt/iptv-gen) | IPTV M3U generator: multi-source collection, LAN health checks, quality ranking, export. |
+| [**article-image**](https://github.com/Lossalt/article-image) | **Movable image-bed entry for WordPress.** Posts call `article_image.php?res=cover-01` instead of embedding absolute file URLs. Physical storage is resolved from `base_url` (and optional `local_dir`), so host/domain migrations only change config — post HTML is left untouched. Whitelist key & extension validation; auto-detect among `webp/jpg/jpeg/png/gif/avif`; config file named `article_image.config.php` to avoid drop-in collisions. |
+| [**random-img**](https://github.com/Lossalt/random-img) | **Random wallpaper redirect service.** Separate `pc` / `mobile` pools with directory auto-scan (no hardcoded counts). Modes: `302` redirect, `?serve` byte streaming, `?json` metadata, plus `api.php` device index. Deploy full repo (local images) or PHP-only (fallback to GitHub raw). MIT-licensed PHP, Nginx sample included. |
+| [**iptv-gen**](https://github.com/Lossalt/iptv-gen) | **IPTV M3U pipeline.** Collects channels from multiple sources, probes liveness on the LAN, ranks by stream quality, and exports a clean playlist. Python CLI oriented to self-hosted media setups. |
+
+Design thread across the PHP tools: **keep content references stable, keep storage replaceable.**
 
 ---
 
@@ -32,8 +34,8 @@ I design small, durable web utilities around self-hosted publishing — mainly *
 
 | Project | Contribution |
 |---|---|
-| [**Myriad**](https://github.com/Myriad-You/Myriad) | [PR #585](https://github.com/Myriad-You/Myriad/pull/585) — `zh-TW` localization for bot-pairing UI (**merged**) |
-| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) | Active fork; preparing upstream contributions to the WordPress theme |
+| [**Myriad**](https://github.com/Myriad-You/Myriad) | [PR #585](https://github.com/Myriad-You/Myriad/pull/585) — **merged.** Completed `zh-TW` copy for bot pairing / unpairing UI in `frontend/src/i18n/zh-TW.json` (~60 keys: QQ, Telegram, Discord, Feishu). Product wording aligned with zh-CN source and locale conventions (`配對碼` / `機器人`; QQ・Telegram `私聊`, Discord `私訊`, Feishu `單聊`). Reviewed & approved by [mirai-mamori](https://github.com/mirai-mamori). |
+| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) | Maintained fork of the WordPress theme (AI-assisted reading, multi-locale). Local workspace prepared (`origin` + `upstream`); contributions in progress. |
 
 ---
 
