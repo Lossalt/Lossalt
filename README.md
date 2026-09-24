@@ -26,14 +26,18 @@
 
 ### 我的项目
 
-- [**article-image**](https://github.com/Lossalt/article-image) — 可搬迁图床，正文写名字，图可以搬走
-- [**random-img**](https://github.com/Lossalt/random-img) — 随机壁纸接口
-- [**iptv-gen**](https://github.com/Lossalt/iptv-gen) — IPTV 播放列表生成
+| 项目 | 简介 | 规模 |
+|---|---|---|
+| [**article-image**](https://github.com/Lossalt/article-image) | 可搬迁图床：正文写名字，迁站只改 `base_url` | **6** commits · `+647` `−107` |
+| [**random-img**](https://github.com/Lossalt/random-img) | 随机壁纸接口：图池可拆，302 / 直出 / JSON | **5** commits · `+628` `−116` |
+| [**iptv-gen**](https://github.com/Lossalt/iptv-gen) | IPTV M3U 生成：采集、测活、排序、导出 | **1** commit · `+1426` `−0` |
 
 ### 我参与的项目
 
-- [**Myriad**](https://github.com/Myriad-You/Myriad) — [第一个已合并的 PR](https://github.com/Myriad-You/Myriad/pull/585) ✅
-- [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) — WordPress 主题，继续贡献中
+| 项目 | 我做了什么 | 量化 |
+|---|---|---|
+| [**Myriad**](https://github.com/Myriad-You/Myriad) | [PR #585](https://github.com/Myriad-You/Myriad/pull/585) 补全 `zh-TW` 机器人配对文案（已 merge） | **60** 条文案 · `+64` `−61` |
+| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) | WordPress 主题 fork，准备往上游贡献 | 进行中 |
 
 ---
 
