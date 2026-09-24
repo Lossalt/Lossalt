@@ -45,11 +45,4 @@
 
 ---
 
-### 联系
-
-- 网站：[cjsy.cc](https://cjsy.cc/)  
-- GitHub：[@Lossalt](https://github.com/Lossalt)
-
----
-
 <p align="center"><sub>Lossalt</sub></p>
