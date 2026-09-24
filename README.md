@@ -1,5 +1,17 @@
 # Lossalt
 
+<p align="center">
+  <img src="assets/header.svg" alt="Lossalt · 自建站 · 可搬迁图床 · 建站小工具" width="100%"/>
+</p>
+
+<p align="center">
+  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white"/>
+  <img alt="WordPress" src="https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white"/>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+  <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
+</p>
+
 自建站与小工具开发者 · 正在参与开源  
 Building personal site utilities · Contributing to open source
 
@@ -27,11 +39,21 @@ Building personal site utilities · Contributing to open source
 
 ---
 
+### 文章 Writing
+
+- 站点总页：**[cjsy.cc](https://cjsy.cc/)**  
+- 《人生第一次 PR：从 SSH 到主线合并》— 记第一次合入 Myriad 主线  
+- 《可搬迁的图床：让 WordPress 正文在迁移后仍不丢图》— `article-image` 的设计笔记  
+
+> 发布后把上面两篇的**正式链接**贴进这里即可（路径仍以 [cjsy.cc](https://cjsy.cc/) 为准）。
+
+---
+
 ### 开源足迹 Open source
 
 | | |
 |---|---|
-| **Myriad** | 首个已合并 PR：[Myriad-You/Myriad#585](https://github.com/Lossalt/Myriad/pull/585) — `zh-TW` 机器人配对文案（已 merge） |
+| **Myriad** | 首个已合并 PR：[Myriad-You/Myriad#585](https://github.com/Myriad-You/Myriad/pull/585) — `zh-TW` 机器人配对文案（已 merge） |
 | **Sakurairo** | WordPress 主题 [mirai-mamori/Sakurairo](https://github.com/mirai-mamori/Sakurairo) 的 fork，准备继续贡献 |
 
 ---
@@ -52,6 +74,4 @@ Building personal site utilities · Contributing to open source
 
 ---
 
-<!--
-Profile README · repo Lossalt/Lossalt
--->
+<p align="center"><sub>Profile README · Lossalt/Lossalt</sub></p>
