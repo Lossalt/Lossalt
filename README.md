@@ -5,7 +5,7 @@
 # Hi 👋
 这里是 **Lossalt**
 
-喜欢研究技术的普通人 · 个人站点 [cjsy.cc](https://cjsy.cc/)
+一个喜欢研究技术的普通人 · 个人站点 [cjsy.cc](https://cjsy.cc/)
 
 ---
 
