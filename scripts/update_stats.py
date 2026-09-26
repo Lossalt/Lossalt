@@ -22,9 +22,10 @@ OWN_REPOS = [
     ("article-image", "可搬迁图床：正文写名字，迁站只改 `base_url`"),
     ("random-img", "随机壁纸接口：图池可拆，302 / 直出 / JSON"),
     ("iptv-gen", "IPTV M3U 生成：采集、测活、排序、导出"),
+    ("yi-relay", "驿 Relay：统一长任务 Agent 入口产品原型（NAS/常驻后端 + 多端同步）"),
 ]
 
-MYRIAD_PRS = ["Myriad-You/Myriad#585"]
+MYRIAD_PRS = ["Myriad-You/Myriad#585", "Myriad-You/Myriad#588"]
 SAKURAIRO_PRS = [
     "mirai-mamori/Sakurairo#1429",
     "mirai-mamori/Sakurairo#1430",
@@ -146,10 +147,11 @@ def main() -> None:
         "| 项目 | 我做了什么 | 量化 |\n"
         "|---|---|---|\n"
         "| [**Myriad**](https://github.com/Myriad-You/Myriad) "
-        f"| [PR #585](https://github.com/Myriad-You/Myriad/pull/585) 补全 `zh-TW` 机器人配对文案（已 merge） "
+        f"| [PR #585](https://github.com/Myriad-You/Myriad/pull/585) `zh-TW` 补全 · "
+        f"[PR #588](https://github.com/Myriad-You/Myriad/pull/588) 本地曲库音源（均已 merge） "
         f"| **{my_files}** files · `+{fmt_num(my_add)}` `−{fmt_num(my_del)}` |\n"
         "| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) "
-        f"| {sak_n} 个 PR：本地曲库 / 说说时间轴 / 评论表单修复 "
+        f"| {sak_n} 个 PR：本地曲库 / 说说时间轴 / 评论表单修复（已进 preview） "
         f"| **{sak_n}** PRs · `+{fmt_num(sak_add)}` `−{fmt_num(sak_del)}` |"
     )
 
