@@ -22,7 +22,7 @@ OWN_REPOS = [
     ("article-image", "可搬迁图床：正文写名字，迁站只改 `base_url`"),
     ("random-img", "随机壁纸接口：图池可拆，302 / 直出 / JSON"),
     ("iptv-gen", "IPTV M3U 生成：采集、测活、排序、导出"),
-    ("yi-relay", "驿 Relay：统一长任务 Agent 入口产品原型（NAS/常驻后端 + 多端同步）"),
+    ("yi-relay", "驿 Relay：对话优先的统一长任务 Agent 入口（Compose 全栈 + 多端同步）"),
 ]
 
 MYRIAD_PRS = ["Myriad-You/Myriad#585", "Myriad-You/Myriad#588"]
