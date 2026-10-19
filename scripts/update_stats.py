@@ -19,6 +19,7 @@ OWNER = "Lossalt"
 README = Path(__file__).resolve().parents[1] / "README.md"
 
 OWN_REPOS = [
+    ("moyue", "墨阅：轻量单文件 Windows EPUB 小说阅读器，内嵌三款字体"),
     ("article-image", "可搬迁图床：正文写名字，迁站只改 `base_url`"),
     ("random-img", "随机壁纸接口：图池可拆，302 / 直出 / JSON"),
     ("iptv-gen", "IPTV M3U 生成器：多源采集 + 本机检测 + 清晰度/连通性排序，导出可播放列表（不自带源）"),
