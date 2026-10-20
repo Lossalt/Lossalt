@@ -18,6 +18,7 @@
 ### 正在使用
 
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -31,7 +32,7 @@
 
 | 项目 | 简介 | 实时状态 |
 |---|---|---|
-| [**moyue**](https://github.com/Lossalt/moyue) | 墨阅：轻量单文件 Windows EPUB 小说阅读器，内嵌宋/黑/楷三款字体，无 Electron / .NET | ![release](https://img.shields.io/github/v/release/Lossalt/moyue?style=flat-square) ![last](https://img.shields.io/github/last-commit/Lossalt/moyue?style=flat-square) ![lang](https://img.shields.io/github/languages/top/Lossalt/moyue?style=flat-square) |
+| [**moyue**](https://github.com/Lossalt/moyue) | 墨阅：轻量 Windows / Android EPUB 小说阅读器，内嵌宋/黑/楷三款字体，原生实现、完全离线 | ![release](https://img.shields.io/github/v/release/Lossalt/moyue?style=flat-square) ![last](https://img.shields.io/github/last-commit/Lossalt/moyue?style=flat-square) ![lang](https://img.shields.io/github/languages/top/Lossalt/moyue?style=flat-square) |
 | [**article-image**](https://github.com/Lossalt/article-image) | 可搬迁图床：正文写名字，迁站只改 `base_url` | ![activity](https://img.shields.io/github/commit-activity/m/Lossalt/article-image?style=flat-square) ![last](https://img.shields.io/github/last-commit/Lossalt/article-image?style=flat-square) ![lang](https://img.shields.io/github/languages/top/Lossalt/article-image?style=flat-square) |
 | [**random-img**](https://github.com/Lossalt/random-img) | 随机壁纸接口：图池可拆，302 / 直出 / JSON | ![activity](https://img.shields.io/github/commit-activity/m/Lossalt/random-img?style=flat-square) ![last](https://img.shields.io/github/last-commit/Lossalt/random-img?style=flat-square) ![lang](https://img.shields.io/github/languages/top/Lossalt/random-img?style=flat-square) |
 | [**iptv-gen**](https://github.com/Lossalt/iptv-gen) | IPTV M3U 生成器：多源采集 + 本机检测 + 清晰度/连通性排序，导出可播放列表（不自带源） | ![activity](https://img.shields.io/github/commit-activity/m/Lossalt/iptv-gen?style=flat-square) ![last](https://img.shields.io/github/last-commit/Lossalt/iptv-gen?style=flat-square) ![lang](https://img.shields.io/github/languages/top/Lossalt/iptv-gen?style=flat-square) |
