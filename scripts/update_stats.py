@@ -26,7 +26,13 @@ OWN_REPOS = [
     ("yi-relay", "驿 Relay：对话优先的统一长任务 Agent 入口（Compose 全栈 + 多端同步）"),
 ]
 
-MYRIAD_PRS = ["Myriad-You/Myriad#585", "Myriad-You/Myriad#588"]
+MYRIAD_PRS = [
+    "Myriad-You/Myriad#585",
+    "Myriad-You/Myriad#588",
+    "Myriad-You/Myriad#690",
+    "Myriad-You/Myriad#691",
+    "Myriad-You/Myriad#692",
+]
 SAKURAIRO_PRS = [
     "mirai-mamori/Sakurairo#1429",
     "mirai-mamori/Sakurairo#1430",
@@ -144,15 +150,15 @@ def main() -> None:
         sak_del += st["del"]
         sak_files += st["files"]
 
+    # 按项目归档，不按 PR 一行一条。
     oss = (
-        "| 项目 | 我做了什么 | 量化 |\n"
+        "| 项目 | 我做的部分 | 量化 |\n"
         "|---|---|---|\n"
         "| [**Myriad**](https://github.com/Myriad-You/Myriad) "
-        f"| [PR #585](https://github.com/Myriad-You/Myriad/pull/585) `zh-TW` 补全 · "
-        f"[PR #588](https://github.com/Myriad-You/Myriad/pull/588) 本地曲库音源（均已 merge） "
+        f"| 博客站内搜索 · 外链图片 · 局域网白屏修复 · 数据卷提案 · `zh-TW` 翻译 · 本地曲库 "
         f"| **{my_files}** files · `+{fmt_num(my_add)}` `−{fmt_num(my_del)}` |\n"
         "| [**Sakurairo**](https://github.com/mirai-mamori/Sakurairo) "
-        f"| {sak_n} 个 PR：本地曲库 / 说说时间轴 / 评论表单修复（已进 preview） "
+        f"| 本地曲库 / 说说时间轴 / 评论表单修复（已进 preview） "
         f"| **{sak_n}** PRs · `+{fmt_num(sak_add)}` `−{fmt_num(sak_del)}` |"
     )
 
