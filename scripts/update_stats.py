@@ -23,6 +23,7 @@ OWN_REPOS = [
     ("article-image", "可搬迁图床：正文写名字，迁站只改 `base_url`"),
     ("random-img", "随机壁纸接口：图池可拆，302 / 直出 / JSON"),
     ("iptv-gen", "IPTV M3U 生成器：多源采集 + 本机检测 + 清晰度/连通性排序，导出可播放列表（不自带源）"),
+    ("hitokoto-local", "本地一言：网页管理后台 + 兼容 hitokoto v1 的 API，句库热加载"),
     ("yi-relay", "驿 Relay：对话优先的统一长任务 Agent 入口（Compose 全栈 + 多端同步）"),
 ]
 
